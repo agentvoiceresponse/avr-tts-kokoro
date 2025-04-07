@@ -1,0 +1,26 @@
+{
+  "name": "avr-tts-kokoro",
+  "version": "1.0.2",
+  "author": "Giuseppe Careri",
+  "description": "",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "node .",
+    "start:dev": "nodemon --inspect ./index.js",
+    "dc:build": "docker build --platform=linux/amd64 -t agentvoiceresponse/avr-tts-kokoro:latest -t agentvoiceresponse/avr-tts-kokoro:${npm_package_version} .",
+    "dc:push": "docker push agentvoiceresponse/avr-tts-kokoro:latest && docker push agentvoiceresponse/avr-tts-kokoro:${npm_package_version}"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/agentvoiceresponse/avr-tts-kokoro.git"
+  },
+  "dependencies": {
+    "axios": "^1.8.4",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.7"
+  }
+}
