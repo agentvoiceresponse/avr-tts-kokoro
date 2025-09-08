@@ -1,5 +1,10 @@
 # Agent Voice Response - Kokoro Text-to-Speech Integration
 
+[![Discord](https://img.shields.io/discord/1347239846632226998?label=Discord&logo=discord)](https://discord.gg/DFTU69Hg74)
+[![GitHub Repo stars](https://img.shields.io/github/stars/agentvoiceresponse/avr-tts-kokoro?style=social)](https://github.com/agentvoiceresponse/avr-tts-kokoro)
+[![Docker Pulls](https://img.shields.io/docker/pulls/agentvoiceresponse/avr-tts-kokoro?label=Docker%20Pulls&logo=docker)](https://hub.docker.com/r/agentvoiceresponse/avr-tts-kokoro)
+[![Ko-fi](https://img.shields.io/badge/Support%20us%20on-Ko--fi-ff5e5b.svg)](https://ko-fi.com/agentvoiceresponse)
+
 This project demonstrates the integration of **Agent Voice Response** with **Kokoro Text-to-Speech (TTS)**. The application sets up an Express.js server that accepts a text string from a client via HTTP POST requests, converts the text into speech using Kokoro TTS, and streams the audio back to the client in real-time. The audio is automatically downsampled from 24kHz to 8kHz for compatibility with AVR systems.
 
 ## Prerequisites
@@ -95,3 +100,20 @@ curl -X POST http://localhost:6012/text-to-speech-stream \
 ```
 
 The audio response will be saved in `response.raw` in LINEAR16 format at 8kHz.
+
+## Support & Community
+
+*   **GitHub:** [https://github.com/agentvoiceresponse](https://github.com/agentvoiceresponse) - Report issues, contribute code.
+*   **Discord:** [https://discord.gg/DFTU69Hg74](https://discord.gg/DFTU69Hg74) - Join the community discussion.
+*   **Docker Hub:** [https://hub.docker.com/u/agentvoiceresponse](https://hub.docker.com/u/agentvoiceresponse) - Find Docker images.
+*   **Wiki:** [https://wiki.agentvoiceresponse.com/en/home](https://wiki.agentvoiceresponse.com/en/home) - Project documentation and guides.
+
+## Support AVR
+
+AVR is free and open-source. If you find it valuable, consider supporting its development:
+
+<a href="https://ko-fi.com/agentvoiceresponse" target="_blank"><img src="https://ko-fi.com/img/githubbutton_sm.svg" alt="Support us on Ko-fi"></a>
+
+## License
+
+MIT License - see the [LICENSE](LICENSE.md) file for details.
